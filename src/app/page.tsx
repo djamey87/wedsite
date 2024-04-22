@@ -13,6 +13,7 @@ export default function Index() {
 
   return (
     <main>
+      <img src="/assets/images/beach.jpg" alt="" />
       <Container>
         <Intro />
         <HeroPost
