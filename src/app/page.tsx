@@ -13,7 +13,18 @@ export default function Index() {
 
   return (
     <main>
-      <img src="/assets/images/beach.jpg" alt="" />
+      {/* TODO: center text and svgs */}
+      <div>
+        {/* TODO: CSS svg mask to clip this beach */}
+        <div className="hero-image">
+          <div className="font-script text-white absolute hero-text">
+            <h1 className=" text-8xl">Michela</h1>
+            <h1 className="text-8xl">&</h1>
+            <h1 className="text-8xl">Dave</h1>
+          </div>
+          <img src="/assets/images/beach.jpg" />
+        </div>
+      </div>
       <Container>
         <Intro />
         <HeroPost
