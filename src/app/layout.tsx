@@ -13,8 +13,8 @@ const greatVibes = Great_Vibes({
 });
 
 export const metadata: Metadata = {
-  title: `Next.js Blog Example with ${CMS_NAME}`,
-  description: `A statically generated blog example using Next.js and ${CMS_NAME}.`,
+  title: `D & M Gettin' hooked!`,
+  description: `Keeping our peeps updated on the plans for the occasion`,
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
   },

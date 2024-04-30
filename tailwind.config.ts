@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-mont)"],
+        mont: ["var(--font-mont)"],
         script: ["var(--font-vibes)"],
       },
       backgroundImage: {

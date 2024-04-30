@@ -16,13 +16,18 @@ export default function Index() {
       {/* TODO: center text and svgs */}
       <div>
         {/* TODO: CSS svg mask to clip this beach */}
-        <div className="hero-image">
-          <div className="font-script text-white absolute hero-text">
-            <h1 className=" text-8xl">Michela</h1>
-            <h1 className="text-8xl">&</h1>
-            <h1 className="text-8xl">Dave</h1>
+        <div className="hero-image relative">
+          <div className="font-script text-white absolute hero-text center">
+            <div className="relative">
+              <h1 className=" text-8xl">Michela</h1>
+              <h1 className="text-8xl">&</h1>
+              <h1 className="text-8xl">Dave</h1>
+              <p className="italic font-mont text-3xl text-center">2025</p>
+              <img src="/assets/images/leaves.svg" />
+              <img src="/assets/images/leaves.svg" />
+            </div>
           </div>
-          <img src="/assets/images/beach.jpg" />
+          {/* <img src="/assets/images/beach.jpg" /> */}
         </div>
       </div>
       <Container>
