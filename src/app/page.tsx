@@ -13,9 +13,7 @@ export default function Index() {
 
   return (
     <main>
-      {/* TODO: center text and svgs */}
       <div>
-        {/* TODO: CSS svg mask to clip this beach */}
         <div className="hero-image relative">
           <div className="font-script text-white absolute hero-text center">
             <div className="relative">
@@ -27,7 +25,6 @@ export default function Index() {
               <img src="/assets/images/leaves.svg" />
             </div>
           </div>
-          {/* <img src="/assets/images/beach.jpg" /> */}
         </div>
       </div>
       <Container>
