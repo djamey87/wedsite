@@ -1,15 +1,23 @@
+import Header from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
-import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
+import { HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
-import { Montserrat, Great_Vibes } from "next/font/google";
+import { Noto_Serif } from "next/font/google";
+import localFont from "next/font/local";
 
 import "./globals.css";
 
-const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mont" });
-const greatVibes = Great_Vibes({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-vibes",
+const notoSerif = Noto_Serif({ subsets: ["latin"], variable: "--font-noto" });
+
+const beyond = localFont({
+  src: [
+    {
+      path: "../../public/assets/fonts/Beyond.otf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-beyond",
 });
 
 export const metadata: Metadata = {
@@ -60,9 +68,8 @@ export default function RootLayout({
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
-      <body
-        className={`${montserrat.variable} ${greatVibes.variable} font-sans`}
-      >
+      <body className={`${notoSerif.variable} ${beyond.variable} font-sans`}>
+        <Header />
         <div className="min-h-screen">{children}</div>
         <Footer />
       </body>

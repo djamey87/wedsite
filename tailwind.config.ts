@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        mont: ["var(--font-mont)"],
-        script: ["var(--font-vibes)"],
+        mont: ["var(--font-noto)"],
+        script: ["var(--font-beyond)"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
