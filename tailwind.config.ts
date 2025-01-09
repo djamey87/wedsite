@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        mont: ["var(--font-noto)"],
-        script: ["var(--font-beyond)"],
+        noto: ["var(--font-noto)"],
+        beyond: ["var(--font-beyond)"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -23,6 +23,7 @@ const config: Config = {
         "accent-7": "#333",
         success: "#0070f3",
         cyan: "#79FFE1",
+        "dm-grey": "#2C3036",
       },
       spacing: {
         28: "7rem",

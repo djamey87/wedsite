@@ -68,7 +68,10 @@ export default function RootLayout({
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
-      <body className={`${notoSerif.variable} ${beyond.variable} font-sans`}>
+      <body
+        className={`relative ${notoSerif.variable} ${beyond.variable} font-sans`}
+      >
+        <div className="monogram-tile-overlay"></div>
         <Header />
         <div className="min-h-screen">{children}</div>
         <Footer />

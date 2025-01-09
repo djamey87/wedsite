@@ -13,21 +13,39 @@ export default function Index() {
 
   return (
     <main>
-      <div>
-        <div className="hero-image relative">
-          <div className="font-script text-white absolute hero-text center">
-            <div className="relative">
-              <h1 className=" text-8xl">Michela</h1>
-              <h1 className="text-8xl">&</h1>
-              <h1 className="text-8xl">Dave</h1>
-              <p className="italic font-mont text-3xl text-center">2025</p>
-              <img src="/assets/images/leaves.svg" />
-              <img src="/assets/images/leaves.svg" />
-            </div>
+      <div className="font-beyond hero-text center text-dm-grey justify-items-center">
+        <div className="relative center inline-block">
+          <h1>Dave</h1>
+          <h1>&</h1>
+          <h1>Michela</h1>
+        </div>
+        <p className="font-noto text-center mt-16">
+          Invite you to celebrate their wedding in Sardinia
+        </p>
+        <img className="mt-16" src="/assets/images/island.svg" />
+        <p className="mt-16 font-noto text-center">19/04/2025</p>
+      </div>
+
+      {/* <div className="">
+        <div className="simple-image-carousel">
+          <div className="flex-none">
+            <img src="/assets/images/wedding-couple/image-1.jpg" />
+          </div>
+          <div className="flex-none">
+            <img src="/assets/images/wedding-couple/image-2.jpg" />
+          </div>
+          <div className="flex-none">
+            <img src="/assets/images/wedding-couple/image-3.jpg" />
+          </div>
+          <div className="flex-none">
+            <img src="/assets/images/wedding-couple/image-4.jpg" />
+          </div>
+          <div className="flex-none">
+            <img src="/assets/images/wedding-couple/image-5.jpg" />
           </div>
         </div>
-      </div>
-      <Container>
+      </div> */}
+      {/* <Container>
         <Intro />
         <HeroPost
           title={heroPost.title}
@@ -38,7 +56,7 @@ export default function Index() {
           excerpt={heroPost.excerpt}
         />
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-      </Container>
+      </Container> */}
     </main>
   );
 }
