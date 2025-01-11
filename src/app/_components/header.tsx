@@ -1,24 +1,42 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const links: { path: string; label: string }[] = [
   { path: "/venue", label: "Venue" },
-  { path: "/travel-accomodation", label: "Travel & Acommodation" },
+  { path: "/travel", label: "Travel & Acommodation" },
   { path: "/schedule", label: "Schedule" },
-  { path: "/activities", label: "Activities" },
-  { path: "/area", label: "Area" },
-  { path: "/blog", label: "Feed" },
+  { path: "/area-details", label: "Area & Activities" },
+  // { path: "/blog", label: "Feed" },
 ];
 
 const Header = () => {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [isTopOfPage,setIsTopOfPage] = useState<boolean>(true);
+  
+  useEffect(() => {
+    const checkScrollPosition = () => {
+      if (window.scrollY >= 5) {
+        setIsTopOfPage(false);
+      } else {
+        setIsTopOfPage(true);
+      }
+    }
+
+    window.addEventListener('scroll', checkScrollPosition);
+
+    checkScrollPosition();
+
+    return () => {
+      window.removeEventListener('scroll', checkScrollPosition);
+    }
+  }, [])
+
 
   return (
-    <nav className="sticky top-0 paper-background z-10">
-      <div className="monogram-tile-overlay"></div>
+    <nav className={`sticky top-0 z-10 transition ${!isTopOfPage ? 'bg-white drop-shadow': ''}`}>
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
