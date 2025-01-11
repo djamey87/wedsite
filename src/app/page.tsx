@@ -43,17 +43,13 @@ export default function Index() {
               <img src={imageUrl} />
             </div>
           ))}
-          {/* <div className="flex-none overflow-hidden rounded-xl">
-            <img src="/assets/images/wedding-couple/image-2.jpg" />
-          </div>
-          <div className="flex-none overflow-hidden rounded-xl">
-            <img src="/assets/images/wedding-couple/image-3.jpg" />
-          </div>
-          <div className="flex-none overflow-hidden rounded-xl">
-            <img src="/assets/images/wedding-couple/image-4.jpg" />
-          </div>
-          <div className="flex-none overflow-hidden rounded-xl">
-            <img src="/assets/images/wedding-couple/image-5.jpg" />
+
+          {/* <div
+            className={`flex-none overflow-hidden border-2 border-gray rounded-xl`}
+          >
+            <div>
+              <h2>More memories to come</h2>
+            </div>
           </div> */}
         </div>
       </div>
