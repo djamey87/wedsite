@@ -5,6 +5,13 @@
 html {
 }
 
+h1.font-beyond {
+  font-size: 8rem;
+}
+h2.font-beyond {
+  font-size: 5rem;
+}
+
 body,
 .paper-background {
   background-image: url("/assets/images/tile-paper.jpg");

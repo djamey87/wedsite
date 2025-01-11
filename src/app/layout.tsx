@@ -73,7 +73,10 @@ export default function RootLayout({
       >
         <div className="monogram-tile-overlay"></div>
         <Header />
-        <div className="min-h-screen">{children}</div>
+        <main className="min-h-screen mx-auto max-w-[90%] bg-white rounded-xl drop-shadow-2xl py-12 bg-opacity-60">
+          {children}
+        </main>
+        {/* <div className="min-h-screen">{children}</div> */}
         <Footer />
       </body>
     </html>
