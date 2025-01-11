@@ -9,7 +9,7 @@ const images = [
   "/assets/images/wedding-couple/image-2.jpg",
   "/assets/images/wedding-couple/image-3.jpg",
   "/assets/images/wedding-couple/image-4.jpg",
-  "/assets/images/wedding-couple/image-5.jpg"
+  "/assets/images/wedding-couple/image-5.jpg",
 ];
 
 export default function Index() {
@@ -17,8 +17,8 @@ export default function Index() {
 
   return (
     <>
-    {/* <main className="mx-auto max-w-[90%] bg-white rounded-2xl drop-shadow-2xl py-12 bg-opacity-60"> */}
-      <div className="font-beyond hero-text center text-dm-grey justify-items-center">
+      {/* <main className="mx-auto max-w-[90%] bg-white rounded-2xl drop-shadow-2xl py-12 bg-opacity-60"> */}
+      <div className="flex flex-col items-center font-beyond hero-text center text-dm-grey justify-items-center">
         <div className="relative center inline-block">
           <h1>Dave</h1>
           <h1>&</h1>
@@ -34,7 +34,12 @@ export default function Index() {
       <div className="mx-10 mt-16">
         <div className="simple-image-carousel">
           {images.map((imageUrl, index) => (
-            <div key={imageUrl} className={`flex-none overflow-hidden rounded-xl ${index !== images.length-1 && 'mr-8'}`}>
+            <div
+              key={imageUrl}
+              className={`flex-none overflow-hidden rounded-xl ${
+                index !== images.length - 1 && "mr-8"
+              }`}
+            >
               <img src={imageUrl} />
             </div>
           ))}
@@ -50,8 +55,8 @@ export default function Index() {
           <div className="flex-none overflow-hidden rounded-xl">
             <img src="/assets/images/wedding-couple/image-5.jpg" />
           </div> */}
-          </div>
         </div>
+      </div>
       {/* <Container>
         <Intro />
         <HeroPost
@@ -64,7 +69,7 @@ export default function Index() {
         />
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container> */}
-     {/* </main> */}
-        </>
+      {/* </main> */}
+    </>
   );
 }
