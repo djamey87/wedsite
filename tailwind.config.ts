@@ -24,6 +24,8 @@ const config: Config = {
         success: "#0070f3",
         cyan: "#79FFE1",
         "dm-grey": "#2C3036",
+        "dm-peach": "#F8B69E",
+        "dm-green": "#D5DBC5",
       },
       spacing: {
         28: "7rem",

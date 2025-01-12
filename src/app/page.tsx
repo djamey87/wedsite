@@ -2,6 +2,7 @@
 // import { HeroPost } from "@/app/_components/hero-post";
 // import { Intro } from "@/app/_components/intro";
 // import { MoreStories } from "@/app/_components/more-stories";
+import Link from "next/link";
 import { getAllPosts } from "@/lib/api";
 
 const images = [
@@ -24,15 +25,30 @@ export default function Index() {
           <h1>&</h1>
           <h1>Michela</h1>
         </div>
-        <p className="font-noto text-center mt-16">
+        <img className="mt-8 max-w-16" src="/assets/images/island.svg" />
+        <p className="font-noto text-center mt-14">
           Invite you to celebrate their wedding in Sardinia
         </p>
-        <p className="mt-8 font-noto text-center">19/04/2025</p>
-        <img className="mt-8" src="/assets/images/island.svg" />
+        <p className="mt-4 font-noto text-center">
+          on Saturday 19<sup>th</sup> April 2025
+        </p>
       </div>
 
-      <div className="mx-10 mt-16">
-        <div className="simple-image-carousel">
+      <p className="mt-4 font-noto text-center">
+        The Schedule for the day can be found{" "}
+        <Link
+          className="text-dm-peach underline-offset-8 hover:underline"
+          as={`/schedule`}
+          href="/schedule"
+          aria-label="ceremony schedule"
+        >
+          here
+        </Link>
+      </p>
+
+      <div className="mx-10 mt-20">
+        <p>The story so far...</p>
+        <div className="simple-image-carousel mt-4">
           {images.map((imageUrl, index) => (
             <div
               key={imageUrl}

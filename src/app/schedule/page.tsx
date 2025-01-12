@@ -5,7 +5,8 @@ export default function Index() {
     <main>
       <Container>
         <div className="text-center">
-          <p>Content coming soon!</p>
+          <p>Please find below the schedule for our special day</p>
+          <img className="mx-auto pt-20" src="/assets/images/timeline.svg" />
         </div>
       </Container>
     </main>
