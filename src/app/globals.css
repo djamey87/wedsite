@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  main a {
+    @apply text-dm-peach-dark underline-offset-4 hover:underline;
+  }
+
+  main ul {
+    @apply list-disc list-outside ml-8 mt-2;
+  }
+  main ul li {
+    @apply mb-2;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-beyond;
+  }
+
+  h3 {
+    @apply text-3xl;
+  }
+}
+
 html {
 }
 
