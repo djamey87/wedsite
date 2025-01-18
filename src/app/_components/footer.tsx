@@ -5,7 +5,7 @@ export function Footer() {
     <footer>
       <Container>
         <div className="pt-8 pb-10 flex flex-col flex-row items-center">
-          <img src="/assets/images/monogram.svg" width={50} />
+          {/* <img src="/assets/images/monogram.svg" width={50} /> */}
         </div>
       </Container>
     </footer>
