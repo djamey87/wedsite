@@ -7,7 +7,7 @@ export default function Index() {
       <div className="flex flex-col items-center font-beyond hero-text center text-dm-grey justify-items-center bg-[url('/assets/images/headers/header-image_area.jpg')] rounded-xl overflow-hidden bg-center">
         <h1 className="text-dm-grey my-20">Nearby</h1>
       </div>
-      <div className="mx-20 mt-20">
+      <div className="mx-10 md:mx-20 mt-20">
         <p>
           Find below suggestions of places to visit near main areas of our
           destination wedding.
@@ -88,43 +88,40 @@ export default function Index() {
         </ul>
 
         <h3>Arbatax</h3>
-        <p>
-          <ul>
-            <li>
-              Visit the{" "}
-              <Link href="https://www.sardegnaturismo.it/en/explore/rocce-rosse">
-                Red Rocks
-              </Link>
-            </li>
-            <li>Walk in the marina</li>
-            <li>
-              Grab a gelato at the star 1 bar or a Pizza at the star 2
-              restaurant
-            </li>
-            <li>
-              Visit the{" "}
-              <Link href="https://virtualarchaeology.sardegnacultura.it/index.php/en/archaeological-sites/eta-medievale/torri-costiere-di-arbatax/detailed-sheets/3222-la-torre-di-san-gemiliano">
-                San Gemiliano Tower
-              </Link>
-              , you can climb it for free and admire the view. Very easy to walk
-              there from the parking space and easy to climb. Is right above the
-              Wedding venue😊, spoiler you will see the venue from the top. Not
-              suited for kids below 4 years old as the ladder is a an "exposed
-              ladder".
-            </li>
-            <li>
-              The area is rich in restaurants and has a local pharmacy with
-              other amenities
-            </li>
-          </ul>
+        <ul>
+          <li>
+            Visit the{" "}
+            <Link href="https://www.sardegnaturismo.it/en/explore/rocce-rosse">
+              Red Rocks
+            </Link>
+          </li>
+          <li>Walk in the marina</li>
+          <li>
+            Grab a gelato at the star 1 bar or a Pizza at the star 2 restaurant
+          </li>
+          <li>
+            Visit the{" "}
+            <Link href="https://virtualarchaeology.sardegnacultura.it/index.php/en/archaeological-sites/eta-medievale/torri-costiere-di-arbatax/detailed-sheets/3222-la-torre-di-san-gemiliano">
+              San Gemiliano Tower
+            </Link>
+            , you can climb it for free and admire the view. Very easy to walk
+            there from the parking space and easy to climb. Is right above the
+            Wedding venue😊, spoiler you will see the venue from the top. Not
+            suited for kids below 4 years old as the ladder is a an "exposed
+            ladder".
+          </li>
+          <li>
+            The area is rich in restaurants and has a local pharmacy with other
+            amenities
+          </li>
+        </ul>
 
-          <h3>Recommended beaches</h3>
-          <ul>
-            <li>CEA Beach</li>
-            <li>Orri beach</li>
-            <li>Foxi e Lioni Beach, sandy and amazing 😊 with free parking.</li>
-          </ul>
-        </p>
+        <h3>Recommended beaches</h3>
+        <ul>
+          <li>CEA Beach</li>
+          <li>Orri beach</li>
+          <li>Foxi e Lioni Beach, sandy and amazing 😊 with free parking.</li>
+        </ul>
       </div>
     </>
   );
