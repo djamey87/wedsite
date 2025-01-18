@@ -1,11 +1,10 @@
-import Container from "@/app/_components/container";
 import Link from "next/link";
 
 export default function Index() {
   return (
     <>
-      <div className="flex flex-col items-center font-beyond hero-text center text-dm-grey justify-items-center bg-[url('/assets/images/headers/header-image_area.jpg')] rounded-xl overflow-hidden bg-center">
-        <h1 className="text-dm-grey my-20">Nearby</h1>
+      <div className="flex flex-col items-center center justify-items-center bg-[url('/assets/images/headers/header-image_area.jpg')] rounded-xl overflow-hidden bg-center bg-cover">
+        <h1 className="text-white my-20">Nearby</h1>
       </div>
       <div className="mx-10 md:mx-20 mt-20">
         <p>
@@ -38,7 +37,10 @@ export default function Index() {
           <li>Cala brandinchi beach (stunning)</li>
           <li>
             Natural reserve Isola Tavolara, I recommend{" "}
-            <Link href="https://www.getyourguide.com/tavolara-island-l142425/?date_from=2025-04-16&date_to=2025-04-16">
+            <Link
+              href="https://www.getyourguide.com/tavolara-island-l142425/?date_from=2025-04-16&date_to=2025-04-16"
+              target="_blank"
+            >
               this boat tour
             </Link>
           </li>
@@ -52,16 +54,25 @@ export default function Index() {
               <li>Free parking</li>
               <li>Kids park in the woods</li>
               <li>
-                <Link href="https://www.hotelboscoselene.com/index.html">
+                <Link
+                  href="https://www.hotelboscoselene.com/index.html"
+                  target="_blank"
+                >
                   Restaurant and pizzeria
                 </Link>
               </li>
               <li>
-                <Link href="https://www.sardegnaturismo.it/en/explore/archaeological-park-seleni-wood">
+                <Link
+                  href="https://www.sardegnaturismo.it/en/explore/archaeological-park-seleni-wood"
+                  target="_blank"
+                >
                   Archeological area
                 </Link>{" "}
                 - you can show up on the day, but I would recommend{" "}
-                <Link href="http://www.tombedeigiganti.it/visitare-il-parco-visita-il-parco/">
+                <Link
+                  href="http://www.tombedeigiganti.it/visitare-il-parco-visita-il-parco/"
+                  target="_blank"
+                >
                   booking
                 </Link>{" "}
                 beforehand to request the guide in English.
@@ -90,7 +101,7 @@ export default function Index() {
         <p>For the more adventurous travellers:</p>
         <ul>
           <li>
-            <Link href="https://www.offroadtracksbaunei.it/en/">
+            <Link href="https://www.offroadtracksbaunei.it/en/" target="_blank">
               Quad excursions
             </Link>
           </li>
@@ -100,7 +111,10 @@ export default function Index() {
         <ul>
           <li>
             Visit the{" "}
-            <Link href="https://www.sardegnaturismo.it/en/explore/rocce-rosse">
+            <Link
+              href="https://www.sardegnaturismo.it/en/explore/rocce-rosse"
+              target="_blank"
+            >
               Red Rocks
             </Link>
           </li>
@@ -110,7 +124,10 @@ export default function Index() {
           </li>
           <li>
             Visit the{" "}
-            <Link href="https://virtualarchaeology.sardegnacultura.it/index.php/en/archaeological-sites/eta-medievale/torri-costiere-di-arbatax/detailed-sheets/3222-la-torre-di-san-gemiliano">
+            <Link
+              href="https://virtualarchaeology.sardegnacultura.it/index.php/en/archaeological-sites/eta-medievale/torri-costiere-di-arbatax/detailed-sheets/3222-la-torre-di-san-gemiliano"
+              target="_blank"
+            >
               San Gemiliano Tower
             </Link>
             , you can climb it for free and admire the view. Very easy to walk
@@ -128,7 +145,10 @@ export default function Index() {
         <h3>Santa Maria Navarrese</h3>
         <p>
           This is a cute coastal village with a great{" "}
-          <Link href="https://www.turismobaunei.eu/en/services/from-santa-maria-navarrese-to-pedra-longa">
+          <Link
+            href="https://www.turismobaunei.eu/en/services/from-santa-maria-navarrese-to-pedra-longa"
+            target="_blank"
+          >
             cliff walk
           </Link>
           (4.5km/1.5 hours), this is an easy going one with no need for trekking
