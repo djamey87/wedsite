@@ -59,15 +59,14 @@ export default function Index() {
               <li>
                 <Link href="https://www.sardegnaturismo.it/en/explore/archaeological-park-seleni-wood">
                   Archeological area
-                </Link>
+                </Link>{" "}
+                - you can show up on the day, but I would recommend{" "}
+                <Link href="http://www.tombedeigiganti.it/visitare-il-parco-visita-il-parco/">
+                  booking
+                </Link>{" "}
+                beforehand to request the guide in English.
               </li>
             </ul>
-            It's easy to get here coming from Olbia. You can show up on the day,
-            but I would recommend{" "}
-            <Link href="http://www.tombedeigiganti.it/visitare-il-parco-visita-il-parco/">
-              booking
-            </Link>{" "}
-            beforehand to request the guide in English
           </li>
           <li>
             Lanusei Village (free parking at Parcheggio di Piazza Mameli
@@ -84,6 +83,16 @@ export default function Index() {
             <br /> Before leaving, and if you have time, visit the view point
             called "Santuario Madonna D' Ogliastra" for a breath taking view of
             the coastline (free parking there).
+          </li>
+        </ul>
+
+        <h3>Baunei</h3>
+        <p>For the more adventurous travellers:</p>
+        <ul>
+          <li>
+            <Link href="https://www.offroadtracksbaunei.it/en/">
+              Quad excursions
+            </Link>
           </li>
         </ul>
 
@@ -115,6 +124,18 @@ export default function Index() {
             amenities
           </li>
         </ul>
+
+        <h3>Santa Maria Navarrese</h3>
+        <p>
+          This is a cute coastal village with a great{" "}
+          <Link href="https://www.turismobaunei.eu/en/services/from-santa-maria-navarrese-to-pedra-longa">
+            cliff walk
+          </Link>
+          (4.5km/1.5 hours), this is an easy going one with no need for trekking
+          shoes. Once you arrive at the end point there is a restaurant and you
+          can go in the water. You will then have to walk back however, so easy
+          on the wine! 😅
+        </p>
 
         <h3>Recommended beaches</h3>
         <ul>
