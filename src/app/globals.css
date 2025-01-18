@@ -2,15 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  main a {
+    @apply text-dm-peach-dark underline-offset-4 hover:underline;
+  }
+
+  main ul {
+    @apply list-disc list-outside ml-8 mt-2;
+  }
+  main ul li {
+    @apply mb-2;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-beyond;
+  }
+
+  h1 {
+    font-size: 8rem;
+    line-height: 8rem;
+  }
+
+  h3 {
+    @apply text-3xl;
+    @apply mt-14;
+  }
+}
+
 html {
 }
 
-h1.font-beyond {
+/* h1.font-beyond {
   font-size: 8rem;
-}
-h2.font-beyond {
+  line-height: 8rem;
+} */
+/* h2.font-beyond {
   font-size: 5rem;
-}
+} */
 
 body,
 .paper-background {
@@ -68,23 +98,17 @@ body,
 }
 
 .simple-image-carousel {
-  /* display: flex; */
-  /* flex: 1 1 auto; */
-  /* overflow-x: auto; */
-  /* display: flex;
-  flex: 1;
-  min-width: 0px; */
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
 }
 .simple-image-carousel > div {
-  /* display: flex;
-  flex: 0 0 auto;
-  flex-direction: row; */
-  /* flex: 1;
-  overflow: auto; */
   display: inline-block;
+}
+.simple-image-carousel img {
+  height: 85vh;
+  width: auto;
+  max-width: unset;
 }
 
 @media (min-width: 768px) {
@@ -93,7 +117,6 @@ body,
     mask-size: 100%;
   }
   .hero-text {
-    /* top: 40%; */
   }
 }
 

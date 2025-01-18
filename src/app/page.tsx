@@ -1,16 +1,14 @@
-// import Container from "@/app/_components/container";
-// import { HeroPost } from "@/app/_components/hero-post";
-// import { Intro } from "@/app/_components/intro";
-// import { MoreStories } from "@/app/_components/more-stories";
 import Link from "next/link";
+
 import { getAllPosts } from "@/lib/api";
+import { MasonryGrid } from "@/app/_components/masonry-grid";
 
 const images = [
-  "/assets/images/wedding-couple/image-1.jpg",
-  "/assets/images/wedding-couple/image-2.jpg",
-  "/assets/images/wedding-couple/image-3.jpg",
-  "/assets/images/wedding-couple/image-4.jpg",
-  "/assets/images/wedding-couple/image-5.jpg",
+  "/assets/images/wedding-couple/image-1_mobile.jpg",
+  "/assets/images/wedding-couple/image-2_mobile.jpg",
+  "/assets/images/wedding-couple/image-3_mobile.jpg",
+  "/assets/images/wedding-couple/image-4_mobile.jpg",
+  "/assets/images/wedding-couple/image-5_mobile.jpg",
 ];
 
 export default function Index() {
@@ -18,23 +16,27 @@ export default function Index() {
 
   return (
     <>
-      {/* <main className="mx-auto max-w-[90%] bg-white rounded-2xl drop-shadow-2xl py-12 bg-opacity-60"> */}
-      <div className="flex flex-col items-center font-beyond hero-text center text-dm-grey justify-items-center">
+      <div className="flex flex-col items-center hero-text text-white justify-items-center bg-[url('/assets/images/headers/header-image_home.jpg')] rounded-xl overflow-hidden bg-center pt-8 pb-12 bg-cover">
         <div className="relative center inline-block">
           <h1>Dave</h1>
           <h1>&</h1>
           <h1>Michela</h1>
         </div>
-        <img className="mt-8 max-w-16" src="/assets/images/island.svg" />
-        <p className="font-noto text-center mt-14">
-          Invite you to celebrate their wedding in Sardinia
-        </p>
-        <p className="mt-4 font-noto text-center">
-          on Saturday 19<sup>th</sup> April 2025
-        </p>
+        <img
+          color="white"
+          className="mt-8 max-w-16 z-10 text-white"
+          src="/assets/images/island.svg"
+        />
       </div>
 
+      <p className="font-noto text-center mt-14">
+        We invite you to celebrate our wedding in Sardinia
+      </p>
       <p className="mt-4 font-noto text-center">
+        on Saturday 19<sup>th</sup> April 2025
+      </p>
+
+      <p className="mt-12 font-noto text-center">
         The Schedule for the day can be found{" "}
         <Link
           className="text-dm-peach underline-offset-8 hover:underline"
@@ -44,10 +46,34 @@ export default function Index() {
         >
           here
         </Link>
+        ,
+      </p>
+      <p className="font-noto text-center">
+        Venue details are{" "}
+        <Link
+          className="text-dm-peach underline-offset-8 hover:underline"
+          as={`/venue`}
+          href="/venue"
+          aria-label="venue details"
+        >
+          here
+        </Link>
+        ,
+      </p>
+      <p className="font-noto text-center">
+        and details of the area can be found{" "}
+        <Link
+          className="text-dm-peach underline-offset-8 hover:underline"
+          as={`/area-details`}
+          href="/area-details"
+          aria-label="area information"
+        >
+          here
+        </Link>
+        .
       </p>
 
-      <div className="mx-10 mt-20">
-        <p>The story so far...</p>
+      <div className="mx-4 mt-20 md:hidden">
         <div className="simple-image-carousel mt-4">
           {images.map((imageUrl, index) => (
             <div
@@ -59,16 +85,13 @@ export default function Index() {
               <img src={imageUrl} />
             </div>
           ))}
-
-          {/* <div
-            className={`flex-none overflow-hidden border-2 border-gray rounded-xl`}
-          >
-            <div>
-              <h2>More memories to come</h2>
-            </div>
-          </div> */}
         </div>
       </div>
+
+      <div className="mt-20 visible hidden md:block">
+        <MasonryGrid />
+      </div>
+
       {/* <Container>
         <Intro />
         <HeroPost
