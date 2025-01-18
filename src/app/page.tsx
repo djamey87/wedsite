@@ -36,7 +36,7 @@ export default function Index() {
         on Saturday 19<sup>th</sup> April 2025
       </p>
 
-      <p className="mt-4 font-noto text-center">
+      <p className="mt-12 font-noto text-center">
         The Schedule for the day can be found{" "}
         <Link
           className="text-dm-peach underline-offset-8 hover:underline"
@@ -46,6 +46,31 @@ export default function Index() {
         >
           here
         </Link>
+        ,
+      </p>
+      <p className="font-noto text-center">
+        Venue details are{" "}
+        <Link
+          className="text-dm-peach underline-offset-8 hover:underline"
+          as={`/venue`}
+          href="/venue"
+          aria-label="venue details"
+        >
+          here
+        </Link>
+        ,
+      </p>
+      <p className="font-noto text-center">
+        and details of the area can be found{" "}
+        <Link
+          className="text-dm-peach underline-offset-8 hover:underline"
+          as={`/area-details`}
+          href="/area-details"
+          aria-label="area information"
+        >
+          here
+        </Link>
+        .
       </p>
 
       <div className="mx-4 mt-20 md:hidden">
