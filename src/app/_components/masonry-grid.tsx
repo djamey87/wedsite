@@ -19,7 +19,7 @@ export const MasonryGrid = () => {
             alt={images[0].alt}
             width={400}
             height={300}
-            className="w-full h-auto object-cover rounded-lg shadow-lg"
+            className="w-full h-auto object-cover rounded-lg shadow-lg hover:scale-105 transition-transform"
             priority
           />
         </div>
@@ -29,7 +29,7 @@ export const MasonryGrid = () => {
             alt={images[1].alt}
             width={600}
             height={300}
-            className="w-full h-auto object-cover rounded-3xl shadow-lg"
+            className="w-full h-auto object-cover rounded-3xl shadow-lg hover:scale-105 transition-transform"
             priority
           />
         </div>
@@ -39,7 +39,7 @@ export const MasonryGrid = () => {
             alt={images[2].alt}
             width={400}
             height={300}
-            className="w-full h-auto object-cover rounded-lg shadow-lg"
+            className="w-full h-auto object-cover rounded-lg shadow-lg hover:scale-105 transition-transform"
             priority
           />
         </div>
@@ -52,7 +52,7 @@ export const MasonryGrid = () => {
             alt={images[3].alt}
             width={400}
             height={300}
-            className="w-full h-auto object-cover rounded-3xl shadow-lg"
+            className="w-full h-auto object-cover rounded-3xl shadow-lg hover:scale-105 transition-transform"
             priority
           />
         </div>
@@ -62,7 +62,7 @@ export const MasonryGrid = () => {
             alt={images[4].alt}
             width={400}
             height={300}
-            className="w-full h-auto object-cover rounded-3xl shadow-lg"
+            className="w-full h-auto object-cover rounded-3xl shadow-lg hover:scale-105 transition-transform"
             priority
           />
         </div>

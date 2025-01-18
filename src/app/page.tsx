@@ -16,7 +16,7 @@ export default function Index() {
 
   return (
     <>
-      <div className="flex flex-col items-center font-beyond hero-text center text-dm-grey justify-items-center bg-[url('/assets/images/header-image_home.jpg')] bg-opacity-20 rounded-xl overflow-hidden bg-center pt-8 pb-12">
+      <div className="flex flex-col items-center font-beyond hero-text center text-dm-grey justify-items-center bg-[url('/assets/images/headers/header-image_home.jpg')] bg-opacity-20 rounded-xl overflow-hidden bg-center pt-8 pb-12">
         <div className="relative center inline-block">
           <h1>Dave</h1>
           <h1>&</h1>

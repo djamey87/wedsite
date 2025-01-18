@@ -23,7 +23,7 @@ const beyond = localFont({
 });
 
 export const metadata: Metadata = {
-  title: `D & M Gettin' hooked!`,
+  title: `D&M Gettin' hitched!`,
   description: `Keeping our peeps updated on the plans for the occasion`,
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
@@ -75,10 +75,9 @@ export default function RootLayout({
       >
         <div className="monogram-tile-overlay"></div>
         <Header />
-        {/* <main className="min-h-screen mx-auto max-w-3xl bg-white rounded-xl drop-shadow-2xl py-12 bg-opacity-60"> */}
         <main className="min-h-screen mx-auto max-w-3xl bg-white rounded-xl drop-shadow-2xl bg-opacity-60">
           {children}
-          <div className="pt-28 pb-12 flex flex-col flex-row items-center">
+          <div className="pt-28 pb-12 flex flex-col items-center">
             <img src="/assets/images/monogram.svg" width={50} />
           </div>
         </main>

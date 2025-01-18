@@ -20,21 +20,27 @@
     @apply font-beyond;
   }
 
+  h1 {
+    font-size: 8rem;
+    line-height: 8rem;
+  }
+
   h3 {
     @apply text-3xl;
+    @apply mt-14;
   }
 }
 
 html {
 }
 
-h1.font-beyond {
+/* h1.font-beyond {
   font-size: 8rem;
   line-height: 8rem;
-}
-h2.font-beyond {
+} */
+/* h2.font-beyond {
   font-size: 5rem;
-}
+} */
 
 body,
 .paper-background {
