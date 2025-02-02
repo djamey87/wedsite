@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Index() {
   return (
     <>
-      <div className="flex flex-col items-center font-beyond hero-text cente justify-items-center bg-[url('/assets/images/headers/header-image_venue.jpg')] rounded-xl overflow-hidden bg-center bg-cover">
+      <div className="flex flex-col items-center font-beyond hero-text cente justify-items-center bg-[url('/assets/images/headers/header-image_venue.jpg')] md:rounded-xl overflow-hidden bg-center bg-cover">
         <h1 className="text-white my-20 shadow-md">Venue</h1>
       </div>
       <div className="mx-10 md:mx-20 mt-20">
