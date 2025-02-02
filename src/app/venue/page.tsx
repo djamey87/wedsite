@@ -43,7 +43,7 @@ export default function Index() {
         <ul>
           <li>Single: 50€</li>
           <li>Double: 100€</li>
-          <li>Tripe: 120€</li>
+          <li>Triple: 120€</li>
           <li>Quadruple: 140€</li>
         </ul>
 
