@@ -1,15 +1,9 @@
 import Link from "next/link";
 
 import { getAllPosts } from "@/lib/api";
-import { MasonryGrid } from "@/app/_components/masonry-grid";
+import { MasonryGrid, timelineImages } from "@/app/_components/masonry-grid";
 
-const images = [
-  "/assets/images/wedding-couple/image-1_mobile.jpg",
-  "/assets/images/wedding-couple/image-2_mobile.jpg",
-  "/assets/images/wedding-couple/image-3_mobile.jpg",
-  "/assets/images/wedding-couple/image-4_mobile.jpg",
-  "/assets/images/wedding-couple/image-5_mobile.jpg",
-];
+const images = timelineImages;
 
 export default function Index() {
   const allPosts = getAllPosts();
@@ -75,14 +69,17 @@ export default function Index() {
 
       <div className="mx-4 mt-20 md:hidden">
         <div className="simple-image-carousel mt-4">
-          {images.map((imageUrl, index) => (
+          {images.map(({ srcMobile, meta: { date } }, index) => (
             <div
-              key={imageUrl}
-              className={`flex-none overflow-hidden rounded-xl ${
+              key={srcMobile}
+              className={`flex-none overflow-hidden rounded-xl relative ${
                 index !== images.length - 1 && "mr-8"
               }`}
             >
-              <img src={imageUrl} />
+              <img src={srcMobile} />
+              <div className="absolute bottom-0 right-0 px-6 py-2 bg-dm-peach text-white">
+                <p>{date}</p>
+              </div>
             </div>
           ))}
         </div>
