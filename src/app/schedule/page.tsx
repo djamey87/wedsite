@@ -7,7 +7,12 @@ export default function Index() {
         <h1 className="text-white my-20">Schedule</h1>
       </div>
       <div className="text-center pt-12 mx-8">
-        <img className="mx-auto" src="/assets/images/timeline.svg" />
+        <div className="hidden md:block">
+          <img className="mx-auto" src="/assets/images/timeline_desktop.svg" />
+        </div>
+        <div className="md:hidden">
+          <img className="mx-auto" src="/assets/images/timeline_mobile.svg" />
+        </div>
       </div>
     </>
   );
